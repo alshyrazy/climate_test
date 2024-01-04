@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+      
 
       <!--=============== FAVICON ===============-->
       <link rel="shortcut icon" href="assets/image/favicon.png" type="image/x-icon">
@@ -38,6 +38,7 @@
                 });
             });
        </script>
+       <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
    </head>
    <body>
           <!--==================== HEADER ====================-->
@@ -154,6 +155,14 @@
       <p class="snippet__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
       <a href="/blog/2021-05-01-my-first-article/" class="btn btn--primary">Continoue Reading</a>
     </article>
+  </li><li>
+    <article class="snippet">
+      <h3 class="snippet__title">My Fireeeest Article</h3>
+      <img src="/assets/blog/article-1.jpg" alt="This is a test" class="snippet__image">
+      <p class="snippet__meta">by <span>Shyraz</span> on <span>May 1, 2021</span></p>
+      <p class="snippet__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
+      <a href="/blog/2021-05-01-my-first-article copy/" class="btn btn--primary">Continoue Reading</a>
+    </article>
   </li>
                 </ul>
                   </div>
@@ -234,5 +243,16 @@
 
       <!--=============== MAIN JS ===============-->
       <script src="js/main.js"></script>
+    <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+      </script>
    </body>
    </html>
