@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+        <link rel="shortcut icon" type="x-icon" href="/img/YCC-logo.png">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/image/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="css/styles.css">
+
+      <title> "Home" </title>
+
+
+       <!--=============== Newsletter js ===============-->
+       <script type="text/javascript">
+            window.addEventListener("load", function() {
+            const form = document.getElementById('myform');
+            form.addEventListener("submit", function(e) {
+                e.preventDefault();
+                const data = new FormData(form);
+                const action = e.target.action;
+                fetch(action, {
+                    method: 'POST',
+                    body: data,
+                })
+                    .then(() => {
+                        alert("You've subscribed — check your inbox shortly for a message!");
+                    })
+                });
+            });
+       </script>
+   </head>
+   <body>
+          <!--==================== HEADER ====================-->
+          <header class="header" id="header">
+            <nav class="nav container">
+               <a href="#" class="nav__logo">
+                   <img src="img/YCC-logo.png" alt="YCC-logo">
+               </a>
+    
+               <div class="nav__menu container" id="nav--menu">
+                   <ul class="nav__list">
+                       <li class="nav__item">
+                           <a href="/index.html" class="nav__link">Home</a>
+                       </li>
+    
+                       <li class="nav__item">
+                           <a href="/aboutus/" class="nav__link">About Us</a>
+                       </li>
+    
+                       <li class="nav__item">
+                           <a href="/blog/" class="nav__link">Blogs</a>
+                       </li>
+    
+                       <li class="nav__item">
+                           <a href="/contactus/" class="nav__link">Contact Us</a>
+                       </li>
+                   </ul>
+                   <div class="nav__buttons">
+                       <a href="/getinvolved/" class="nav__button-link">Get Involved</a>
+                       <a href="/donate/" class="nav__button-ghost">Donate Now</a>
+                   </div>
+    
+                   <!-- Close Button-->
+                   <div class="nav__close" id="nav-close">
+                       <i class="ri-close-line"></i>
+                   </div>                    
+               </div>
+    
+               <!-- Toggle Button-->
+               <div class="nav__toggle" id="nav-toggle">
+                   <i class="ri-menu-line"></i>
+               </div>
+            </nav>
+         </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <img src="/img/head.jpg" alt="home image" class="home__bg">
+            <div class="home__shadow"></div>
+
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Youth-Climate Connect
+                    </h1>
+                    <h2 class="home__subtitle">
+                        Empowering Global Youth in Climate Action
+                    </h2>
+                    <a href="/aboutus.html" class="button">
+                        Learn More <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+            </div>
+         </section>
+
+         <!--==================== Section1 ====================-->
+         <section class="Section1 section" id="Section1">
+            <div class="Section1__container container grid">
+
+                <div class="Section1__image">
+                    <img src="/img/1.jpg" alt="Secion1 image" class="Section1__img">
+                    <div class="Section1__shadow"></div>
+                </div>
+
+                <div class="Section1__data">
+                    <h3 class="Section1__subtitle">
+                        Empower
+                    </h3>
+
+                    <h1 class="Section1__title">
+                        Empowering Youth for <br>
+                        Climate Action
+                    </h1>
+
+                    <p class="Section1__text">
+                        YCC takes a unique approach to empowering youth to take meaningful action in response to the pressing climate crisis. Through our comprehensive online platform, we equip young individuals with the knowledge, skills and resources they need to make a difference. 
+                    </p>
+
+                    <div class="Section1__bullets">
+                        <p class="Section1__bullet1">
+                            <i class="ri-box-3-fill"></i> Knowledge: Learn about the climate crisis and its impact.
+                        </p>
+    
+                        <p class="Section1__bullet2">
+                            <i class="ri-box-3-fill"></i> Skills: Acquire practical skills to address climate challenges.
+                        </p>
+    
+                        <p class="Section1__bullet3">
+                            <i class="ri-box-3-fill"></i> Resources: Access tools and resources for climate action.
+                        </P>
+                    </div>
+
+                    <div class="Section1__buttons">
+                        <a href="#" class="Section1__button-boxed">
+                            Learn More
+    
+                        </a>
+                        <a href="#" class="Section1__button-unboxed">
+                            Get Involved <i class="ri-arrow-right-s-line"></i>
+                        </a>
+                    </div>           
+                </div>
+            </div>
+         </section>
+
+         <!--==================== Section2 ====================-->
+         <section class="Section2 section" id="Section2">
+            <img src="/img/2.jpg" alt="Sec2 image" class="Sec2__bg">
+            <div class="Sec2__shadow"></div>
+            
+            <div class="Section2__container container grid">
+                <div class="Section2__titles container grid">
+                    <h1 class="Section2__title">
+                        How YCC Empowers Youth <br>
+                        to Take Climate Action?
+                    </h1>
+                    <h3 class="Section2__text">
+                        YouthClimate Connect (YCC) is a comprehensive online platform designed to empower and engage global youth in climate action, with a primary focus on vulnerable regions in the global south. Key components include:
+                    </h3>
+                </div>
+                
+                <div class="Section2__cards-grid container grid">
+                    <article class="Section2__cards">
+                    
+                        <h3 class="Section2__card1-title">
+                            <i class="ri-box-2-line"></i>  Climate Education
+                        </h3>
+                        <h4 class="Section2__card1-text">
+                            Providing engaging multilingual climate awareness videos and accessible courses covering various climate-related fields to equip youth with knowledge and skills
+                        </h4>
+                        
+                    </article>
+                    <article class="Section2__cards">
+                        
+                        <h3 class="Section2__card1-title">
+                            <i class="ri-box-2-fill"></i>  Gamified Learning
+                        </h3>
+                        <h4 class="Section2__card1-text">
+                            Incorporating gamification to make climate education interactive and enjoyable, reinforcing climate concepts and inspiring innovation
+                        </h4>
+                        
+                    </article>
+                    <article class="Section2__cards">
+                        
+                        <h3 class="Section2__card1-title">
+                            <i class="ri-box-3-fill"></i>  Community Collaboration
+                        </h3>
+                        <h4 class="Section2__card1-text">
+                            Offering a messaging space for youth to exchange knowledge, experiences, and ideas related to climate change, fostering a sense of community and facilitating collaboration.
+                        </h4>
+                        
+                    </article>
+                </div>
+                
+            </div>
+         </section>
+         
+         <!--==================== Section3 ====================-->
+         <section class="Section3 section" id="Section3">
+
+            
+
+            <div class="Section3__container">
+                <h1 class="Section3__title">
+                    Empowering Youth through<br>
+                    Workshops, Webinars, and Community Projects
+                </h1>
+                <div class="Section3__container-grid container grid">
+
+                    <article class="Section3__cards">
+
+                        <div class="Section3__image">
+                            <img src="/img/3.jpg" alt="Section3 img" class="Section3__img">
+                            <div class="Section3__shadow"></div>
+                        </div>
+    
+                        <h2 class="Section3__card1-title">
+                            Building a Sustainable Future through Education and Collaboration
+                        </h2>
+    
+                        <h4 class="Section3__card1-text">
+                            At YouthClimate Connect, we offer a range of services to equip young individuals with the knowledge and skills they need to actively address climate challenges. Our workshops provide hands-on learning experiences, our webinars offer in-depth discussions with experts, and our community projects create opportunities for youth to make a tangible impact in their communities.
+                        </h4>
+    
+                        <a href="contactus.html" class="Sec3button">
+                            Contact Us <i class="ri-arrow-right-s-line"></i>
+                        </a>
+                        
+                    </article>
+    
+                    <article class="Section3__cards">
+    
+                        <div class="Section3__image">
+                            <img src="/img/4.jpg" alt="Section3 img" class="Section3__img">
+                            <div class="Section3__shadow"></div>
+                        </div>
+    
+                        <h2 class="Section3__card1-title">
+                            Join Our Global Network and Make a Difference in Your Community
+                        </h2>
+                        
+                        <h4 class="Section3__card1-text">
+                            By becoming a part of YouthClimate Connect, you will have access to a supportive global network of like-minded individuals who are passionate about addressing the climate crisis. Together, we can create positive change and build a sustainable future for all.
+                        </h4>
+    
+                        <a href="aboutus.html" class="Sec3button">
+                            Learn More <i class="ri-arrow-right-s-line"></i>
+                        </a>
+                        
+                    </article>
+    
+                    <article class="Section3__cards">
+    
+                        <div class="Section3__image">
+                            <img src="/img/5.jpg" alt="Section3 img" class="Section3__img">
+                            <div class="Section3__shadow"></div>
+                        </div>
+    
+                        <h2 class="Section3__card1-title">
+                            Take Action and Make a Lasting Impact on the Planet
+                        </h2>
+                        
+                        <h4 class="Section3__card1-text">
+                            At YouthClimate Connect, we believe that every individual has the power to make a difference. Join our movement and be a part of the solution to the pressing climate crisis. Together, we can create a more sustainable and resilient future.
+                        </h4>
+    
+                        <a href="getinvolved.html" class="Sec3button">
+                            Get Involved <i class="ri-arrow-right-s-line"></i>
+                        </a>
+                        
+                    </article>
+
+                </div>                
+                
+            </div>
+         </section>
+         
+         <!--==================== Blogs ====================-->
+
+         <section class="blogs section"  id="blogs">
+            <img src="/img/blogs.jpg" alt="blogs image" class="blogs__bg">
+            <div class="Sec2__shadow"></div>
+            
+            <div class="blogs__container">
+
+                <h3 class="blogs__subtitle">
+                    Blogs
+                </h3>    
+
+                <h1 class="blogs__title">
+                    Discover Our Blog: Where Ideas Take Flight!
+                </h1>
+    
+                <h3 class="blogs__text">
+                    Embark on a Green Journey: Navigating the Path to Climate Action through Insightful Blogs, Sustainable Solutions, and Collective Inspiration.
+                </h3>
+                <div class="blogs__container-grid container grid">
+                    <article class="blogs__cards">
+                    
+                        <div class="blogs__image">
+                            <img src="img/6.jpg" alt="blogs image" class="blogs__card-img">
+                        </div>
+                        
+                        <h4 class="blogs__card1-catg">5 min read</h4>
+                        <h3 class="blogs__card1-title">Demystifying the Global South: A Closer Look in 2023</h3>
+                        <h4 class="blogs__card1-text">Demystifying the Global South: Economic and Social Progress Challenge Stereotypes in 2023</h4>
+                        <a href="#" class="blog__button">Read More <i class="ri-arrow-right-s-line"></i></a>
+                    </article>
+    
+                    <article class="blogs__cards">
+                        <div class="blogs__image">
+                            <img src="img/7.jpg" alt="blogs image" class="blogs__card-img">
+                        </div>
+                        <h4 class="blogs__card1-catg">5 min read</h4>
+                        <h3 class="blogs__card1-title">The Impact of Climate Change on Youth</h3>
+                        <h4 class="blogs__card1-text">Youth Face a Future of Climate Anxiety and Increased Risks, But They're Fighting Back</h4>
+                        <a href="#" class="blog__button">Read More <i class="ri-arrow-right-s-line"></i></a>
+                    </article>
+    
+                    <article class="blogs__cards">
+                        <div class="blogs__image">
+                            <img src="img/8.jpg" alt="blogs image" class="blogs__card-img">
+                        </div>
+                        <h4 class="blogs__card1-catg">5 min read</h4>
+                        <h3 class="blogs__card1-title">The Ripple Effect of Climate Change: Impact on Freshwater Resources</h3>
+                        <h4 class="blogs__card1-text">Climate Change Dries Up Freshwater Resources, Threatening Water Supplies and Food Security</h4>
+                        <a href="#" class="blog__button">Read More <i class="ri-arrow-right-s-line"></i></a>
+                    </article>
+                </div>
+                <div class="moreblogs__button-grid container grid">
+                    <a href="/blog.html" class="moreblogs__button">
+                        View all
+                    </a>
+                </div>
+                
+            </div>
+            
+         </section>
+         <!--==================== FAQ ====================-->
+         <section class="FAQ section" id="FAQ">
+            <div class="FAQ__container grid">
+                <div class="FAQ__data">
+                    <h1 class="FAQ__title">
+                        FAQs
+                    </h1>
+                    <h2 class="FAQ__subtitle">
+                        Find answers to frequently asked questions about YCC and how to get involved in climate action initiatives.
+                    </h2>
+
+                    <a href="#" class="togglefaq"> 
+                        <i class="ri-arrow-down-s-line"></i> What is YouthClimate Connect (YCC)?
+                    </a>
+                    <div class="faqanswer">
+                        <p>YCC is a youth-led global initiative that aims to empower and mobilize youth to take meaningful action in response to the pressing climate crisis. YCC provides a comprehensive online platform that offers climate education, gamified learning, community collaboration, inclusivity, and sustainability for young leaders, especially in the global south.</p>
+                    </div>
+
+                    <a href="#" class="togglefaq"> 
+                        <i class="ri-arrow-down-s-line"></i> Why is YCC focused on the global south?
+                    </a>
+                    <div class="faqanswer">
+                        <p>YCC recognizes that climate injustice in the global south is a critical and pressing issue that requires immediate attention and action. The global south faces disproportionate impacts of climate change, such as rising temperatures, droughts, floods, storms, and sea level rise, which threaten the lives and livelihoods of millions of people, especially the youth. YCC aims to address the gap in climate awareness, access to information, and engagement opportunities for youth in these regions, and to empower them to become climate champions.</p>
+                    </div>
+
+                    <a href="#" class="togglefaq"> 
+                        <i class="ri-arrow-down-s-line"></i> How does YCC educate youth about climate change?
+                    </a>
+                    <div class="faqanswer">
+                        <p>YCC offers engaging, multilingual climate education resources, including videos and courses, to equip youth with the knowledge and skills needed to address climate challenges effectively. YCC also incorporates gamification elements to make climate education interactive and enjoyable, fostering greater engagement and understanding. YCC’s climate education covers topics such as the causes and effects of climate change, the solutions and actions that can be taken, and the role of youth in driving transformative change.</p>
+                    </div>
+
+                    <a href="#" class="togglefaq"> 
+                        <i class="ri-arrow-down-s-line"></i> How can I get involved?
+                    </a>
+                    <div class="faqanswer">
+                        <p>There are three option to join us and get involved:<br>
+                            1. You can join as a member of one of our different teams that's according to you skills.<br>
+                            2. General member where you can receive our next webinars and training workshop and more firstly through Email.<br>
+                            3. To be our Official ambassador in your country this will be announce later.
+
+
+                        </p>
+                    </div>
+
+                    <a href="#" class="togglefaq"> 
+                        <i class="ri-arrow-down-s-line"></i> What is YCC's mission?
+                    </a>
+                    <div class="faqanswer">
+                        <p>Our Mission: To provide accessible, innovative, and inclusive tools for youth to become 
+                            climate champions. We aim to educate, connect, and inspire young leaders through a 
+                            dynamic online platform. By doing so, we empower them to initiate real-world climate 
+                            projects, contributing to a sustainable and resilient future.</p>
+                    </div>
+                    
+
+                    <h1 class="endFAQ__title">
+                        Still have a question?
+                    </h1>
+                    <h2 class="endFAQ__subtitle">
+                        Contact us for further assistance.
+                    </h2>
+                    <a href="contactus.html" class="endFAQ__button"> 
+                        Contact Us
+                    </a>
+
+                </div>
+            </div>
+         </section>
+         <!--==================== footer1 ====================-->
+         <section class="footer1 section" id="footer1">
+            <img src="/img/17.jpg" alt="footer1 image" class="footer1__bg">
+            <div class="footer1__container container grid">
+                <div class="footer1__data">
+
+                    <h1 class="footer1__title">
+                        Ready to make a difference?
+                    </h1>
+
+                    <p class="footer1__text">
+                        Join hands with Youth-Climate Connect, Together, we can explore transformative ideas, implement sustainable practices, and inspire the youth to lead the charge in mitigating climate change. Whether you're interested in collaborative projects, educational initiatives, or advocacy campaigns, Youth-Climate Connect is your partner in shaping a greener, more sustainable world for generations to come.
+                    </p>       
+
+                </div>
+                <a href="/contactus.html" class="footer1__button">
+                    GET IN TOUCH
+                </a>   
+            </div>
+         </section>
+
+         
+      </main>
+      
+      <!--==================== FOOTER2 ====================-->
+      <footer class="footer2">
+    <div class="footer2__container container grid">
+        <div class="footer2__data">
+
+            <div class="newsletter">
+                <h3>Subscribe to our Newsletter</h3>
+                <form
+                method="POST"
+                action="https://script.google.com/macros/s/AKfycby650KEh2Fk057UvbP1u__Z4u9WHykLvVGPdwW8a7EbOK7FfBtD4w6KvSp0RpkyvpX0/exec"
+                id="myform"
+                >   
+                    <div class="newsletter_container container grid">
+                        <div>
+                            <input name="Name" type="text" placeholder="Enter your Name">
+                        </div>
+                        <div>
+                            <input name="Email" type="email" placeholder="Enter your Email">
+                        </div>
+                        <div>
+                            <button type="submit" class="submit">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="social-media">
+                <h3>Follow us</h3>
+                <div class="SM__links container">
+                    <a href="https://www.facebook.com/youthclimateconnect"><img src="img/facebook-circle-fill.svg" alt="Facebook"></a>
+                <a href="https://twitter.com/Youth_Climate_C"><img src="img/twitter-x-line.svg" alt="Twitter"></a>
+                <a href="https://www.instagram.com/youthclimate_connect"><img src="img/instagram-fill.svg" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/company/yc-c/"><img src="img/linkedin-box-fill.svg" alt="Linkedin"></a>
+                </div>
+                
+            </div>
+
+            <div class="quick-links container">
+                <div class="quick__links container">
+                    <ul>
+                        <li><a href="/aboutus/">About</a></li>
+                        <li><a href="/getinvolved/">Get Involved</a></li>
+                        <li><a href="/blog/">Blogs</a></li>
+                        <li><a href="/donate/">Donate</a></li>
+                        <li><a href="/contactus/">Contact Us</a></li>
+                        <li><a href="https://linktr.ee/youthclimateconnect">Stay Connected</a></li>
+                    </ul>
+                </div>
+                <h4>
+                    Copyright © Youth-Climate Connect
+                </h4>
+                
+            </div>
+        </div>
+    </div>
+    
+</footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="js/scrollreveal.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="js/main.js"></script>
+    </body>
+    </html>

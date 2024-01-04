@@ -1,0 +1,42 @@
+---
+title: "Blog"
+layout: 'base.njk'
+style: /css/blog.css
+---
+
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <img src="/img/blogs.jpg" alt="home image" class="home__bg">
+            <div class="home__shadow"></div>
+
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Blogs
+                    </h1>
+                </div>
+            </div>
+         </section>
+
+         <!--==================== Section1 ====================-->
+         <section class="Section1 section" id="Section1">
+                
+            <div class="section container">
+                <h1 class="section-title">Recent articles</h1>
+                
+                <ul role="list" class="articles__list flow">
+                  {%- for post in collections.post | reverse -%}
+                    {% include 'article-snippet.njk' %}
+                  {%- endfor %}
+                </ul>
+                  </div>
+
+         </section>
+
+         <!--==================== footer1 ====================-->
+         
+         
+      </main>
+
+      

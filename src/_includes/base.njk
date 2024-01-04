@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+        <link rel="shortcut icon" type="x-icon" href="/img/YCC-logo.png">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/image/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="{{ style }}">
+
+      <title> {{ title }}</title>
+
+
+       <!--=============== Newsletter js ===============-->
+       <script type="text/javascript">
+            window.addEventListener("load", function() {
+            const form = document.getElementById('myform');
+            form.addEventListener("submit", function(e) {
+                e.preventDefault();
+                const data = new FormData(form);
+                const action = e.target.action;
+                fetch(action, {
+                    method: 'POST',
+                    body: data,
+                })
+                    .then(() => {
+                        alert("You've subscribed — check your inbox shortly for a message!");
+                    })
+                });
+            });
+       </script>
+   </head>
+   <body>
+    {% include 'header.njk' %}
+    
+    {{ content | safe}}
+    
+    {% include 'footer.njk' %}
+   </body>
+   </html>
